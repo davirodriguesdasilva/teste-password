@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputPasswordComponent } from './components/input-password/input-password.component';
 import { FormsModule } from '@angular/forms';
+import { InputPasswordDirective } from './directive/input-password.directive';
 
 
 @NgModule({
   declarations: [
-    InputPasswordComponent
+    InputPasswordComponent,
+    InputPasswordDirective
   ],
   imports: [
     CommonModule,
@@ -14,6 +16,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [
     InputPasswordComponent,
+    InputPasswordDirective,
     FormsModule
   ]
 })

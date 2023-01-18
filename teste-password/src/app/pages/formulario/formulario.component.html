@@ -1,10 +1,15 @@
-
-
 <form>
-  <label  for="nome">Nome:</label>
-  <input [(ngModel)]="nome" name="nome" id="nome" type="text">
-
+  <div>
+    <label for="nome">Nome:</label>
+    <input [(ngModel)]="nome" name="nome" id="nome" type="text">
+  </div>
   <app-input-password label="senha" (valorEnviado)="receberValor($event)"></app-input-password>
-
   <p>Nome: {{nome}}; Senha: {{senha}}</p>
+</form>
+
+<form action="">
+  <div>
+    <label for="">Senha</label>
+    <input type="password" appInputPassword>
+  </div>
 </form>
