@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputPasswordComponent } from './components/input-password/input-password.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -9,10 +9,12 @@ import { InputPasswordComponent } from './components/input-password/input-passwo
     InputPasswordComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    InputPasswordComponent
+    InputPasswordComponent,
+    FormsModule
   ]
 })
 export class SharedModule { }
